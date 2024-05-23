@@ -1,0 +1,58 @@
+
+
+
+
+.card {
+   
+    position: relative; 
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .card h2 {
+    z-index: 2; 
+    color: white;
+    font-size: 2em;
+  }
+
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  .card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 130%;
+    background-image: linear-gradient(180deg, #F1675F 54%, rgb(28, 175, 129));
+    animation: rotBGimg 5s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: white;
+    border-radius: 15px;
+    z-index: 0;
+  }
+
+
+   .card:hover:before {
+    background-image: linear-gradient(180deg, #F1675F 54%, rgb(28, 175, 129));
+    animation: rotBGimg 5s linear infinite;
+  } 
+  
+  

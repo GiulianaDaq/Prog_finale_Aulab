@@ -1,0 +1,301 @@
+:root {
+  --verde_grigio: #186049;
+  --beige: #e6cdba;
+  --verde_chiaro:  rgb(119, 189, 167)
+}
+
+
+/* bottone costumizzato */
+.button-custom {
+
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #247158, #6ab29b);
+    border-radius: 20px;
+
+    background-size: 100% auto;
+    font-family: inherit;
+
+    padding: 0.6em 1.5em;
+
+}
+
+
+.button-custom-homepage{
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #247158, #6ab29b);
+  border-radius: 20px;
+  width: 250px;
+  height: 80px;
+  background-size: 100% auto;
+  font-family: inherit;
+
+  padding: 0.6em 1.5em;
+}
+
+/* fine customizzazione dell'inizio della pagina dopo la navbar fissa */
+ /* index-annunci e categorie show accedi e altre view compresi i messaggi alert */
+
+ .custom-view{
+  width: 100%;
+  height: -50vh;
+  margin-top: 10vh;
+}
+
+.custom-view-profilo{
+  margin-top: 27vh;
+}
+
+/* x dispositivi grandi */
+@media screen and (min-width: 1800px) {
+ .custom-view{
+  margin-top: 7vh;
+ }
+}
+
+
+.custom-accedi{
+  width: 100%;
+  margin-top: 30vh;
+  margin-bottom: 15vh;
+}
+
+.custom-register{
+  width: 100%;
+  margin-top: 30vh;
+  margin-bottom: 15vh;
+}
+
+.custom-alert{
+  width: 100%;
+  margin-top: 15vh;
+  margin-bottom: -15vh;
+}
+
+.custom-alert-revisore{
+  width: 100%;
+  margin-top: -4vh;
+
+}
+
+.custom-drop-categorie {
+  margin-top: -4vh;
+  margin-bottom: -4vh;
+  text-align: center;
+
+}
+
+.custom-drop-item-categorie{
+  margin-top: 3vh;
+  margin-bottom: -2vh;
+
+}
+
+/* fine customizzazione dell'inizio della pagina dopo la navbar fissa */
+
+  .animated-text-from-right {
+      position: relative;
+      right: -100%;
+      animation: slideFromRightToCenter 3s forwards;
+    }
+
+    .animated-text-from-left {
+      position: relative;
+      left: -100%;
+      animation: slideFromLeftToCenter 3s forwards;
+    }
+
+    @keyframes slideFromRightToCenter {
+      0% {
+        right: -100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+      100% {
+        right: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+    }
+
+    @keyframes slideFromLeftToCenter {
+      0% {
+        left: -100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+      100% {
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+    }
+
+    .overflow-custom{
+      overflow-x: hidden;
+    }
+/* fine header */
+
+/* immagine header */
+.img-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-image: url('/public/img/sfondo3.jpg');
+
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+
+/* fine immagine header */
+
+/* modifiche card  */
+.card-container {
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.card-img-top {
+  border-radius: 13%;
+}
+
+
+
+
+.m-custom-cards-index{
+  margin-left: 120px;
+}
+
+
+/* img-preview-custom anteprima immagini inserimento annunci */
+.img-preview-custom{
+  width: 180px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-footer-custom{
+  text-decoration: none;
+  color: white;
+}
+
+.btn-footer-custom:hover{
+ color: black;
+}
+
+/* scroll-bar custom */
+
+::-webkit-scrollbar{
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(30deg, #247158, #6ab29b);
+  border-radius: 25px;
+  width: 20px;
+}
+.mt-custom-dettaglio-title{
+  margin-top: 180px;
+}
+
+/* .dim_img_carousel{
+  width: 400px;
+  height: 300px;
+} */
+
+.w-custom{
+  width: 100%;
+}
+
+
+/* media query x schermi 1500 px */
+
+@media screen and (min-width: 1450px) {
+
+  .margin-custom-card-width-1920{
+    margin-left: 30px;
+  }
+}
+
+/* media query x schermi di 1920 x 1080 che sistema il margine nell'index degli annunci */
+@media screen and (min-width: 1800px) {
+  .margin-custom-card-width-1920{
+    margin-left: 65px;
+  }
+}
+
+/* .input-search-custom{
+  height: 30px;
+  width: 180px;
+}
+
+.btn-custom-search{
+  height: 30px;
+  width: 56px;
+  display: flex;
+  align-items: center;
+  background-color: var(--beige);
+  color: var(--verde_grigio);
+} */
+
+.grandezza-custom-dettaglio{
+  font-size: 45px;
+}
+
+.grandezza-custom-sottotitoli{
+  font-size: 20px;
+}
+
+.bordo-smussato-foto-revisor{
+  border-radius: 25px;
+}
+
+.link-show{
+  text-decoration: none;
+  color: var(--verde_grigio);
+}
+
+.link-show:hover{
+  
+  color: var(--verde_chiaro);
+}
+
+.titolo-custom-show{
+  font-size: 45px;
+}
+
+.sottotitolo-custom-show{
+  font-size: 18px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px; /* Imposta la larghezza desiderata */
+    height: 50px; /* Imposta l'altezza desiderata */
+    background-color:var(--verde_grigio); /* Imposta il colore desiderato */
+    /* background-size: 50px 50px; */
+     /* Mantieni la dimensione delle icone */
+}
+
+.me-custom-posizionamento-area-personale{
+  margin-right: 35px;
+}
